@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Logan Beebe's Final Project</title>
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            crossorigin="anonymous" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:wght@300;400;700&display=swap"
+            rel="stylesheet" />
+
+        <!-- CSS -->
+        <link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Topper -->
+        <div class="container-fluid" id="topper">
+            <div class="overlay-text">
+                <h1>In the Calls of Bonobos, Scientists Hear Hints of Language</h1>
+                <p class="lead">By Carl Zimmer</p>
+                <p>April 3, 2025</p>
+            </div>
+        </div>
+
+        <!-- Story -->
+        <main class="container my-5">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 article-content">
+                    <p>
+                        After listening to hundreds of hours of ape calls, a team of scientists say they have detected a
+                        hallmark of human language: the ability to put together strings of sounds to create new
+                        meanings.
+                    </p>
+                    <p>
+                        The provocative finding, published Thursday in the journal Science, drew praise from some
+                        scholars and skepticism from others.
+                    </p>
+                    <p>
+                        Federica Amici, a primatologist at the University of Leipzig in Germany, said that the study
+                        helped place the roots of language even further back in time, to millions of years before the
+                        emergence of our species. “Differences between humans and other primates, including in
+                        communication, are far less distinct and well-defined than we have long assumed,” Dr. Amici
+                        said.
+                    </p>
+
+                    <!--Button NOTE: I have no idea how to make it play sound-->
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+                                <button id="button1" class="btn btn-primary">Bonobo call #1</button>
+                            </div>
+                            <div class="col-auto">
+                                <button id="button2" class="btn btn-success">Bonobo call #2</button>
+                            </div>
+                            <div class="col-auto">
+                                <button id="button3" class="btn btn-danger">Bonobo call #3</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pull Quote -->
+                    <blockquote class="pull-quote">
+                        "They can sequence these calls in ways that slightly change the meaning — a remarkable parallel
+                        to how human language works."
+                    </blockquote>
+
+                    <!-- Pic -->
+                    <div>
+                    <img src="bonobo2.webp" alt="Bonobo in the forest" class="img-fluid my-4" />
+                        <p class="image-attribution">Photo by Lukas Bierhoff / Kokolopori Bonobo Research Project</p>
+                    </div>
+
+                    <!-- (Infographic will probably go here) -->
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center py-4">
+            <p>Published as a final project for JOUR352.</p>
+        </footer>
+    </body>
+</html>
