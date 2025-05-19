@@ -18,16 +18,17 @@
             href="https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:wght@300;400;700&display=swap"
             rel="stylesheet" />
 
-        <!-- CSS -->
+        <!-- Custom CSS -->
         <link href="style.css" rel="stylesheet" />
     </head>
 
     <body>
         <!-- Topper -->
-        <div class="container-fluid" id="topper">
-            <div class="row>">
-                <div class="col">
-                    <div class="overlay-text">
+        <div class="container-fluid p-0" id="topper">
+            <div class="row">
+                <div class="col position-relative">
+                    <img src="bonobo1.webp" alt="Bonobo in the forest" class="w-100 topper-img" />
+                    <div class="overlay-text position-absolute bottom-0 start-0 text-white p-4">
                         <h1>In the Calls of Bonobos, Scientists Hear Hints of Language</h1>
                         <p class="lead">By Carl Zimmer</p>
                         <p>April 3, 2025</p>
@@ -36,10 +37,22 @@
             </div>
         </div>
 
-        <!-- Story -->
-        <main class="container">
+        <!-- Image Attribution -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center image-attribution">
+                    Mia, a young bonobo female in Kokolopori Bonobo Reserve in the Democratic Republic of Congo,
+                    vocalizes in response to distant group members.<br />
+                    <span>Credit...Martin Surbeck / Kokolopori Bonobo Research Project</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Story, Chart, and Audio -->
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-8 offset-md-2 article-content">
+                    <!-- Story -->
                     <p>
                         After listening to hundreds of hours of ape calls, a team of scientists say they have detected a
                         hallmark of human language: the ability to put together strings of sounds to create new
@@ -61,46 +74,212 @@
                             “Differences between humans and other primates, including in communication, are far less
                             distinct and well-defined than we have long assumed,”
                         </p>
-                        <p class="attribution">- Dr. Federica Amici</p>
+                        <p class="attribution">– Dr. Federica Amici</p>
                     </div>
 
-                    <!-- Pic -->
+                    <img src="bonobo.jpg" alt="Bonobo in the forest" class="img-fluid my-4" />
+                    <p class="image-attribution">Photo from Wikipedia</p>
+
+                    <p>
+                        But other researchers said that the study, which had been conducted on bonobos, close relatives
+                        of chimpanzees, had little to reveal about how we use words. “The present findings don’t tell us
+                        anything about the evolution of language,” said Johan Bolhuis, a neurobiologist at Utrecht
+                        University in the Netherlands.
+                    </p>
+
+                    <p>
+                        Many species can communicate with sounds. But when an animal makes a sound, it typically means
+                        just one thing. Monkeys, for instance, can make one warning call in reference to a leopard and a
+                        different one for an incoming eagle flying.
+                    </p>
+
+                    <p>
+                        In contrast, we humans can string words together in ways that combine their individual meanings
+                        into something new. Suppose I say, “I am a bad dancer.” When I combine the words “bad” and
+                        “dancer,” I no longer mean them independently; I’m not saying, “I am a bad person who also
+                        happens to dance.” Instead, I mean that I don’t dance well.
+                    </p>
+
+                    <p>
+                        Linguists call this compositionality, and have long considered it an essential ingredient of
+                        language. “It’s the force behind language’s creativity and productivity,” said Simon Townsend, a
+                        comparative psychologist at the University of Zurich in Switzerland. “Theoretically, you can
+                        come up with any phrase that has never been uttered before.” For decades, scientists found no
+                        clear sign of compositionality in other species. But a few years ago Dr. Townsend and his
+                        colleagues discovered a hint of it in chimpanzees.
+                    </p>
+
+                    <p>
+                        In a Ugandan forest, Dr. Townsend’s team recorded more than 330 hours of chimpanzees going about
+                        their daily lives, and identified a dozen distinct calls. To the untrained ear, the recordings
+                        might sound like a random cacophony. But Dr. Townsend and his colleagues noticed that certain
+                        calls followed others more than would be expected by chance alone. All told, they identified 15
+                        distinctive pairs of calls.
+                    </p>
+
+                    <p>
+                        The scientists wondered if a pair of calls carried a meaning greater than that of two individual
+                        calls on their own. To test that hypothesis, they spent two years studying one pair in
+                        particular: a call known as “waa-bark,” followed by another known as “alarm-huu.”
+                    </p>
+
+                    <!-- Photo -->
                     <div>
                         <img src="bonobo2.webp" alt="Bonobo in the forest" class="img-fluid my-4" />
                         <p class="image-attribution">Photo by Lukas Bierhoff / Kokolopori Bonobo Research Project</p>
                     </div>
 
-                    <!--Button NOTE: I have no idea how to make it play sound-->
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-auto">
-                                <button id="button1" class="btn btn-primary">Bonobo call #1</button>
-                            </div>
-                            <div class="col-auto">
-                                <button id="button2" class="btn btn-success">Bonobo call #2</button>
-                            </div>
-                            <div class="col-auto">
-                                <button id="button3" class="btn btn-danger">Bonobo call #3</button>
-                            </div>
-                        </div>
+                    <p>
+                        Chimpanzees make the waa-bark call as a way to bring other chimpanzees to them. An ape will make
+                        the call during a hunt, for instance, or to summon allies during a fight. They make the
+                        alarm-huu call when frightened or surprised — in response to an earthquake, perhaps, or the
+                        unexpected sight of a scientist’s raincoat.
+                    </p>
+
+                    <p>
+                        Dr. Townsend and his colleagues wondered if “alarm-huu” when it was followed by “waa-bark” meant
+                        something else. They noticed two occasions in which a chimpanzee paired the calls when it
+                        encountered a snake while other chimpanzees were within earshot. Perhaps, the scientists
+                        thought, the two calls together meant something like, “Get over here and help me deal with this
+                        snake!” Experiments followed. In one, the researchers pulled a fake snake across a trail as
+                        chimpanzees passed by. The apes, as predicted, often responded with “alarm-huu” followed by
+                        “waa-bark.”
+                    </p>
+
+                    <p>
+                        The researchers then played the pair of calls through loudspeakers and watched how chimpanzees
+                        reacted. The apes tended to look at the loudspeaker for a long time; almost a minute. If it
+                        played only “alarm-huu” or “waa-bark” on their own, the chimpanzees glanced over for just a few
+                        seconds.
+                    </p>
+
+                    <p>
+                        An additional clue suggested that the two calls combined to form a snake alarm: When some
+                        chimpanzees heard the paired calls, they leaped into a tree, a typical response (among apes)
+                        when snakes are around.
+                    </p>
+
+                    <p>
+                        As intriguing as these ideas were, testing them was slow going. To broaden the research, and
+                        speed it along, Dr. Townsend began collaborating with Martin Surbeck, a behavioral ecologist at
+                        Harvard who studies bonobos, a species of ape that split off from chimpanzees two million years
+                        ago. Dr. Surbeck and his colleagues have spent years following apes in the Kokolopori Bonobo
+                        Reserve in the Democratic Republic of Congo.
+                    </p>
+
+                    <p>
+                        In 2022, Melissa Berthet, a postdoctoral researcher in Dr. Townsend’s lab, joined with them to
+                        eavesdrop on the apes. She made 400 hours of recordings, capturing 567 single calls and 425
+                        pairs. Dr. Berthet also made a note of what had happened just before the bonobos made their
+                        calls. Did a tree fall? Was the ape making a nest for the night, or grooming a friend? Dr.
+                        Berthet filled out a 336-item checklist for every call.
+                    </p>
+
+                    <p>
+                        Shane Steinert-Threlkeld, a computational linguist at the University of Washington who was not
+                        involved in the study, said that the scale of the collected data was unmatched in this line of
+                        research. “For that reason, I’m very excited about it,” he said.
+                    </p>
+
+                    <!-- Chart -->
+                    <h2 class="mt-5">Complex Communication in the Animal Kingdom</h2>
+                    <div class="flourish-embed" data-src="story/3080684">
+                        <script src="https://public.flourish.studio/resources/embed.js"></script>
+                        <noscript
+                            ><img
+                                src="https://public.flourish.studio/story/3080684/thumbnail"
+                                width="100%"
+                                alt="visualization"
+                        /></noscript>
+                    </div>
+                    <p>This slideshow shows various species known for complex vocalizations.</p>
+
+                    <p>
+                        Back in Zurich, Dr. Berthet listened to the recordings and classified the calls into a dozen
+                        different types. To analyze the meaning of the calls, she analyzed her checklist. She and her
+                        colleagues then used some of the mathematical techniques that artificial intelligence systems
+                        like ChatGPT use to learn how words are related to each other. This analysis allowed the
+                        scientists to map the bonobo calls visually; the closer the calls appeared to each other on the
+                        map, the more similar their meanings.
+                    </p>
+                    <p>
+                        The researchers also found that the bonobos frequently employed 16 specific pairs of calls, and
+                        that most pairs showed up on the map in the same neighborhood as the two individual sounds
+                        comprising them. This suggested that their combination conveyed no special meaning.
+                    </p>
+
+                    <p>
+                        But four pairs of calls stood out. These landed on the map far from the placement of their two
+                        individual calls; together, it seemed, they carried a meaning unlike either call alone. One such
+                        pair, for instance, combined two calls: a high hoot, generally made when a bonobo is trying to
+                        draw the attention of others far away, and a low hoot, made when the bonobo is excited by some
+                        emotion.
+                    </p>
+
+                    <!-- Audio -->
+                    <h3 class="mt-5">Bonobo Vocalizations</h3>
+                    <div class="flourish-embed flourish-audio" data-src="visualisation/23272962">
+                        <script src="https://public.flourish.studio/resources/embed.js"></script>
+                        <noscript
+                            ><img
+                                src="https://public.flourish.studio/visualisation/23272962/thumbnail"
+                                width="100%"
+                                alt="audio visualization"
+                        /></noscript>
                     </div>
 
-                    <!-- (Infographic will probably go here) -->
+                    <p>
+                        Combined, the two calls seem to express something more, perhaps a rescue plea to distant bonobos
+                        when under attack. “It would be like, ‘Pay attention to me because I am in distress,’” Dr.
+                        Berthet said.
+                    </p>
+
+                    <p>
+                        Dr. Berthet said that the new results should address any skepticism about Dr. Townsend’s earlier
+                        study on chimpanzees. “Linguists would always say, ‘Yeah, OK, but it’s just one combination —
+                        what does it really tell us?’” she said. “Here we show actually bonobos have several
+                        compositional structures, and they use them a lot.”
+                    </p>
+                    <p>
+                        Together, the two studies on bonobos and chimpanzees suggest that our common ancestor with these
+                        apes also possessed compositionality, the researchers argue.
+                    </p>
+                    <p>
+                        But Dr. Bolhuis questioned whether the new study could actually detect compositionality in
+                        bonobos. “Compositionality is not just about combining two words,” he said: It’s also about
+                        following rules of syntax to assemble words into phrases and bigger units of meaning.
+                    </p>
+
+                    <p>
+                        Dr. Townsend countered that perhaps the act of pairing calls was a first step toward a
+                        full-blown compositionality that had emerged later, in early humans.
+                    </p>
+
+                    <p>
+                        A next step, Dr. Steinert-Threlkeld said, would be for researchers to analyze the bonobo data
+                        with more sophisticated methods, to see if these results hold up. Maybe a computer could be
+                        trained to learn the meanings of individual calls, then tested to see if it could predict the
+                        meanings of pairs of calls it had never heard before. “It’s imperfect,” he said of the new
+                        study. “But it’s a good first step.”
+                    </p>
                 </div>
             </div>
-        </main>
+        </div>
 
         <!-- Footer -->
-        <footer class="text-center py-4">
-            <p>Published as a final project for JOUR352.</p>
-            <p>
-                This Story has been reproduced as apart of coursework for the Philip Merrill College of Journalism at
-                the University of Maryland, College Park. It was originally published by
-                <a
-                    href="https://www.nytimes.com/2025/04/03/science/communication-language-bonobos.html#:~:text=Origins-,In%20the%20Calls%20of%20Bonobos%2C%20Scientists%20Hear%20Hints%20of%20Language,But%20some%20scholars%20are%20skeptical"
-                    >The New York Times</a
-                >
-            </p>
-        </footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center py-4">
+                    <p>Published as a final project for JOUR352.</p>
+                    <p>
+                        This story has been reproduced as a part of coursework for the Philip Merrill College of
+                        Journalism at the University of Maryland, College Park. It was originally published by
+                        <a href="https://www.nytimes.com/2025/04/03/science/communication-language-bonobos.html"
+                            >The New York Times</a
+                        >.
+                    </p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
